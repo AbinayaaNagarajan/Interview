@@ -25,8 +25,8 @@ const Login =()=>{
             
             <form onSubmit={handleSubmit} style={{background:"#dddddd", height: "500px", display: "flex", flexDirection: "column", alignItems:"center",  }}>
             <h4>Login</h4>
-                <input type="username" value={username} placeholder="UserName" onChange={(e)=>setUsername(e.target.value)} style={{margin:"10px 0 15px 0", padding: "5px"}} />
-                <input type="password" value={password} placeholder="Password" onChange={(e)=>setPassword(e.target.value)} style={{marginBottom:"15px"}}/>
+                <input type="username" value={username} placeholder="UserName" required onChange={(e)=>setUsername(e.target.value)} style={{margin:"10px 0 15px 0", padding: "5px"}} />
+                <input type="password" value={password} placeholder="Password" required onChange={(e)=>setPassword(e.target.value)} style={{marginBottom:"15px"}}/>
                 <button type= "submit">Login</button>
             </form>
         </div>
